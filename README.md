@@ -1,15 +1,8 @@
-# 🚑 Zero-Gap 119 : 응급 환자 골든타임 확보를 위한 AI 지원 시스템
-> **"정보의 공백이 생명을 위협하지 않도록."** 응급 현장-구급차-병원을 실시간으로 연결하는 AI 기반 응급 의료 지원 솔루션입니다.
-
-## 📌 Project Overview
-응급 상황 발생 시 구급대원과 의료진 사이의 정보 전달 지연을 최소화하기 위한 시스템입니다. AI STT와 LLM을 활용하여 현장 상황을 실시간으로 요약하고, 최적의 이송 병원을 추천합니다.
-
 ## 🛠 Tech Stack
-* **AI**: Whisper(STT), GPT-4o (또는 사용하신 LLM), LangChain
+* **AI**: Whisper(STT), Hugging-Face, LangChain
 * **Backend**: FastAPI / Python
-* **Frontend**: React.js / Flutter (PPT 확인 후 수정)
-* **Maps**: Kakao/T-map API (경로 최적화)
-* **Data**: 공공데이터포털(응급의료센터 정보 API)
+* **Frontend**: React.js
+* **Data**: 위급상황 음성/음향 (고도화) - 119 지능형 신고접수 음성 인식 데이터 (AI HUB)
 
 ## 🏗 Key Features & Tech Specs
 1.  **AI 상황 요약 (STT & Summary)**:
@@ -26,15 +19,7 @@
 ```text
 ├── backend/
 │   ├── ai/               # Whisper, LLM 처리 로직
-│   ├── api/              # 공공데이터 API 연동 모듈
-├── frontend/             # (Gitignored) AI 모델 및 가중치
+│   ├── models/              # 공공데이터 API 연동 모듈
+├── frontend/             # 사용자 UI/UX
 ```
 
-
-
----
-
-**다음 단계로 무엇을 도와드릴까요?**
-1. 이 프로젝트의 **핵심 기능인 '병원 추천 알고리즘'에 대한 기술 설명**을 더 보강해 드릴까요?
-2. 2.8년 경력과 이 두 프로젝트를 합친 **'통합 포트폴리오(노션 용)' 문구**를 만들어 드릴까요?
-3. 이 프로젝트에서 사용된 **특정 API 연동 코드에 대한 리뷰**가 필요하신가요?
